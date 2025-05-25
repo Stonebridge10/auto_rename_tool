@@ -1,0 +1,24 @@
+{
+  "language": "fr",
+  "backup_folder": "backups",
+  "log_folder": "logs",
+  "watchdog_enabled": false,
+  "watchdog_path": "./to_rename",
+  "file_types": {
+    "videos": ["mp4", "avi", "mkv", "mov", "flv", "wmv"],
+    "scans": ["cbz", "cbr", "zip", "rar", "7z"],
+    "music": ["mp3", "flac", "wav", "aac", "m4a", "ogg"]
+  },
+  "rename_patterns": {
+    "videos": "(?i)(.+)[ _.-]*s?(\\d+)[ _.-]*e?(\\d+)",
+    "scans": "(?i)(.+)[ _.-]*n[°]?\\s*(\\d+)[ _.-]*c[\\-]?(\\d+)",
+    "music": "(?i)(.+)[ _.-]*[-_]?[ _.-]*(feat\\.|ft\\.|duo)[ _.-]*(.+)"
+  },
+  "default_rename_formats": {
+    "videos": "{title} S{season}E{episode}",
+    "scans": "{title} N° {number} C-{chapter}",
+    "music": "{artist} - {title}"
+  },
+  "dry_run": true,
+  "max_preview_files": 20
+}

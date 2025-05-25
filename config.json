@@ -1,4 +1,34 @@
-"replace_with_official": {
-  "kaiju": "Kaiju No. 8",
-  "naruto": "Naruto"
+{
+  "keywords": {
+    "chapter": ["ch", "chap", "ch-", "c"],
+    "tome": ["t", "tome"],
+    "episode": ["ep", "e", "episode"],
+    "season": ["s", "season"]
+  },
+
+  "file_types": {
+    "scans": [".cbz", ".zip", ".rar", ".pdf"],
+    "videos": [".mp4", ".mkv", ".avi", ".mov", ".flv"],
+    "musics": [".mp3", ".wav", ".flac", ".aac"]
+  },
+
+  "aliases": {
+    "snk": "Shingeki no Kyojin",
+    "aot": "Shingeki no Kyojin",
+    "mha": "My Hero Academia",
+    "bnha": "My Hero Academia",
+    "hxh": "Hunter x Hunter",
+    "kn8": "Kaiju N° 8",
+    "kaiju8": "Kaiju N° 8"
+  },
+
+  "music_format": "Artist - Title",
+
+  "preferences": {
+    "default_chapter_if_missing": null,
+    "default_tome_if_missing": null,
+    "auto_ignore_files_without_number": true,
+    "rename_to_uppercase": false,
+    "auto_confirm_renames": false
+  }
 }

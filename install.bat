@@ -1,10 +1,14 @@
 @echo off
-echo Installation des dépendances...
+echo.
+echo [*] Installation des dépendances Python...
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 
-echo Création des dossiers nécessaires...
-mkdir logs
-mkdir backups
+echo.
+echo [*] Création des dossiers nécessaires...
+if not exist logs mkdir logs
+if not exist backups mkdir backups
 
-echo Installation terminée !
+echo.
+echo [✓] Installation terminée.
 pause
